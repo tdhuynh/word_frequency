@@ -16,5 +16,5 @@ with open("sample.txt") as open_file:
     book_sort = sorted(book_dict.items(), key=lambda x: x[1])
     book_sort = book_sort[:-21:-1]
 
-for item in book_sort:
-    print(item)
+for a, b in book_sort:
+    print("{} {}".format(a, b))
