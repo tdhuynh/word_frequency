@@ -13,4 +13,8 @@ with open("sample.txt") as open_file:
             book_dict[word] += 1
         else:
             book_dict[word] = 1
-    print(sorted(book_dict.items(), key=lambda x: x[1]))
+    book_sort = sorted(book_dict.items(), key=lambda x: x[1])
+    book_sort = book_sort[:-21:-1]
+
+for item in book_sort:
+    print(item)
